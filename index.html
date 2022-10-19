@@ -5,53 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selfie</title>
-<link rel="stylesheet" href="./assets/css/main.css">
+<!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+
+<style>
+
+
+     .row{
+            display: flex;
+            width: 1500px;
+
+        }
+    .col{
+            width: 150px;
+        }
+    .debug{
+        border: 1px solid red;
+    }
+
+    .fixed{
+        position: fixed;
+    }
+
+    .margin10{
+        margin: 10px;
+    }
+
+    .padding10{
+        padding:10px;
+    }
+
+
+    .header{
+        left: 0;
+        top: 0;
+
+    }
+
+    .aumax{
+        width: 100%;
+    }
+
+    .footer{
+        bottom: 0;
+    }
+
+    .container{
+
+    }
+
+    .container .row{
+
+    }
+
+    container .flexible {
+        display: flex;
+    }
+
+    container .row .col{
+
+
+    }
+
+
+</style>
 
 </head>
 <body>
+    <header class="header fixed debug padding10 aumax">
+        <div class="container">
+            <div class="row flexible">
+                <div class="col">
+                    Logo
+                </div>
+                <div class="col">
+                    Premier menu
+                </div>
+            </div>
+        </div>
+    </header>
     <div>
-        Header
-    </div>
-    <div>
-        <!-- URL complete
-            <img src="https://www.lessimpson.fr/wp-content/uploads/bart-simpson.webp" alt="bard simpson"> 
-        -->
-
-    
-        
         <section>
-            <article>
-                <header>
-                    <div>
-                        <div>
-                            <h1 class="textcentreecolorerouge textbackgroundcolorgrey">Titre de l'image</h1>
-                            <h2 class="textcentreecolorerouge">Sous titre</h2>
+            <article class="container">
+                    <div class="row flexible">
+                        <div class="col">
+                        <h1>Titre selfie 1</h1>
                         </div> 
-                        <div>
+                        <div class="col">
                             [...]
                         </div>
                     </div>
-                </header>
-                <img src="images/bart-simpson.webp" alt="Bart simpson">
-            </article>
-            <article class="textcentreecolorerouge">
-                <header>
-                    <div>
-                        <div>
-                            <h1>Titre de l'image 2</h1>
-                            <h2>Sout titre 2</h2>
-                        </div>
-                        <div>
-                            [...]
-                        </div>
+                <div class="row flexible">
+                    <div class="col">
+                        <img src="images/bart-simpson.webp" alt="Bart simpson">
                     </div>
-                </header>
-                <img src="https://www.lessimpson.fr/wp-content/uploads/bart-simpson.webp" alt="bard simpson">
+                </div>
+
             </article>
         </section>
     </div>
-    <div>
+    <footer class="footer fixed debug aumax">
         Footer
-    </div>
+    </footer>
 </body>
 </html>
